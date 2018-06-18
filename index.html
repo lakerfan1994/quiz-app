@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang= "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name= "Description" content= "Test your knowledge of the NBA and other sports related news!">
+    <meta name= "keywords" content= "NBA, Test, Lonzo, basketball, baseball, Ball, Lebron">
+    <title>Quiz App</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
+   <body>
+<!--Scoreboard and current question -->
+    <header role= "banner">
+      <div class= "row">
+        <div class= "questions-done col-2 block">
+          <p>Question 0/10</p>
+        </div>
+        <div class= "current-score col-2 block">
+          <p>Score: 0</p>
+        </div>
+      </div>
+    </header>
+    <main role= "main">
+      <div class= "start-page"> 
+        <div class= "col-4 startText block">
+          <h1> How well do you know your NBA Basketball? Let's find out!</h1>
+          <button type= "button" class= "buttonStart">Start</button>
+        </div>
+      </div>
+      <div class= "question-page hidden"></div>
+      <div class= "feedback-page-correct hidden" role= "region">
+        <div class= "row">
+          <div class= "col-6 feedback block">
+            <h3>Congratulations, you got it right!</h3>
+            <button type= "button" class= "continueButton">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class= "feedback-page-incorrect hidden">
+        <div class= "row">
+         <div class= "col-6 feedback block">
+           <h3 class= "custom-response"></h3>
+           <button type= "button" class= "continueButton">Next</button>
+         </div>
+        </div>
+      </div>
+      <div class= "final-page hidden">
+        <div class= "row">
+          <div class= "col-6 final block">
+            <h3 class= "final-message"></h3>
+            <button type= "button" class= "restart-button">Restart</button>
+          </div> 
+        </div>
+      </div>
+   </main>
+   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+   <script src= "store.js"></script>
+   <script src="index.js"></script>
+ </body>
+</html>
